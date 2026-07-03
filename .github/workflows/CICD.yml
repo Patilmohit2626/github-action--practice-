@@ -12,12 +12,12 @@ jobs :
     runs-on: ubuntu-latest
     steps:
       - name: build the Code on docker 
-        run: echo" Docker building process initializing"
+        run: echo "Docker building process initializing"
   test:
     runs-on: ubuntu-latest
     steps:
         - name: Testing the Code brfore deploying
-          run: echo"Testing the code before the application deploy"
+          run: echo "Testing the code before the application deploy"
   deploy:
     runs-on: ubuntu-latest
     steps:
