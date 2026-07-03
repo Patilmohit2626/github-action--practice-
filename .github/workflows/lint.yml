@@ -1,6 +1,14 @@
 # what is the goal of this workflows - whenever someone change the python code, linter will check at that time.
-name: autolinter
+name: Auto linter
 
 on:
   push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout/ clone the code
+        uses: actions/checkout@v7 
     
