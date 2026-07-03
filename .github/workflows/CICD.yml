@@ -9,16 +9,19 @@ jobs :
       - name : Clone the Code background
         run: echo " Clonning the Code From the Git"
   build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: build the Code on docker 
         run: echo "Docker building process initializing"
   test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
         - name: Testing the Code brfore deploying
           run: echo "Testing the code before the application deploy"
   deploy:
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
         - name : deploying the application 
