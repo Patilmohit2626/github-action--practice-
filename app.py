@@ -2,7 +2,7 @@
 from flask import Flask
 # now check the code 
 app = Flask(__name__)
-
+# this code is just for the example 
 @app.route("/")
 def home():
     return "Hello, Flask!"
