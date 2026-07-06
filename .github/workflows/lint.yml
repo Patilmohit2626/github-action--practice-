@@ -1,4 +1,4 @@
-# what is the goal of this workflows - whenever someone change the python code, linter will check at that time.
+# what is the goal of this workflows - whenever someone change the python code, linter will check at that time. this is the updated file 
 name: Auto linter
 
 on:
