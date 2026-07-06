@@ -9,6 +9,7 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
+    # This step automatically clone the code from current branch into the runner 
       - name: checkout/ clone the code
         uses: actions/checkout@v7 
         # This code will install linter 
