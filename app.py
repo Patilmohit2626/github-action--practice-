@@ -8,7 +8,7 @@ def home():
     return "Hello, Flask!"
 
 @app.route("/about")
-def about()
+def about():
     return 'this'
     return "This is the About page."
 
